@@ -1,5 +1,13 @@
 /* last rule wins! more specific selector wins! */
 
+/* custom properties */
+
+:root {
+    --dark-blue: #2B315E;
+    --med-blue: #585C7C;
+    --gold: #FFB859;
+
+}
 * {
     box-sizing: border-box;
 }
@@ -17,7 +25,7 @@ img {
 
 
 body {
-    background: #2A315F;
+    background: var(--dark-blue);
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
@@ -41,7 +49,7 @@ body {
 
 .light-background {
     background: #F3D9B5;
-    color: #2B315E;
+    color: var(--dark-blue);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
@@ -127,7 +135,7 @@ h3 {
 .button {
     color: white;
     text-decoration: none;
-    background: #FFB859;
+    background: var(--gold);
     padding: 8px 20px;
     display: inline-block;
     border-radius: 15px;
@@ -146,6 +154,6 @@ h3 {
 }
 
 .btn-blue:hover {
-    background-color: #101439;
+    background-color: var(--dark-blue);
     color: white;
 }
